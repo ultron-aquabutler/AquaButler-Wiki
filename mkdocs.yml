@@ -83,6 +83,7 @@ nav:
     - Getting Started: Getting-Started.md
   - Software & Protocols:
     - MQTT Bindings: MQTT-Bindings.md
+    - Home Assistant Configuration: HA-Configuration.md
     - njsPC Bridge Integration: njsPC-Bridge-Integration.md
   - Cloud & Fleet:
     - OpenBalena Fleet: OpenBalena-Fleet.md

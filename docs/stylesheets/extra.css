@@ -98,3 +98,15 @@
 .ab-pill.stub {
   background-color: #6b7280;
 }
+.ab-pill.pilot {
+  /* BETA / pilot content — uses AquaButler navy-light to stand out
+     from stub pages and nav highlighting. Used on pages that are
+     actively customer-facing for the v1.0 Beta rollout. */
+  background-color: var(--ab-navy-light);
+  letter-spacing: 0.04em;
+}
+.ab-pill.full {
+  /* Fully-shipped page — no pill in normal use. Reserved for cases
+     where a page is intentionally narrow (vs. a stub). */
+  background-color: #16a34a;
+}
