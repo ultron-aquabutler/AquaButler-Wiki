@@ -1,0 +1,100 @@
+/* AquaButler brand palette override — locked 2026-10-19 per AquaButler-Server/docs/wiki/canonical-messages.md
+   Colors:
+     --ab-navy:    #0050b3   (primary navy, parent brand hsl(210 100% 28%))
+     --ab-bg:      #f5f8fc   (background light, hsl(210 30% 98%))
+     --ab-red:     #dc2626   (alert red)
+*/
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #0050b3;
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+  --md-accent-fg-color:         #0050b3;
+  --md-accent-fg-color--transparent: #0050b31a;
+  --md-typeset-a-color:         #0050b3;
+
+  --ab-navy:        #0050b3;
+  --ab-navy-light:  #3d7ad6;
+  --ab-bg:          #f5f8fc;
+  --ab-red:         #dc2626;
+  --ab-red-light:   #f87171;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #3d7ad6;
+  --md-primary-bg-color:        #1a1a1a;
+  --md-primary-bg-color--light: #1a1a1ab3;
+  --md-accent-fg-color:         #5e9bff;
+  --md-accent-fg-color--transparent: #5e9bff1a;
+  --md-typeset-a-color:         #5e9bff;
+
+  --ab-navy:        #5e9bff;
+  --ab-navy-light:  #a8c8ff;
+  --ab-bg:          #1a1a1a;
+  --ab-red:         #f87171;
+  --ab-red-light:   #fca5a5;
+}
+
+/* Admonition color overrides — align AquaButler alert colors */
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: var(--ab-red);
+}
+.md-typeset .admonition.warning > .admonition-title,
+.md-typeset details.warning > summary {
+  background-color: var(--ab-red);
+  color: #ffffff;
+}
+.md-typeset .admonition.warning > .admonition-title::before,
+.md-typeset details.warning > summary::before {
+  color: #ffffff;
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: var(--ab-navy);
+}
+.md-typeset .admonition.note > .admonition-title,
+.md-typeset details.note > summary {
+  background-color: var(--ab-navy);
+  color: #ffffff;
+}
+.md-typeset .admonition.note > .admonition-title::before,
+.md-typeset details.note > summary::before {
+  color: #ffffff;
+}
+
+/* Brand banner on Home page */
+.ab-hero {
+  background: linear-gradient(135deg, var(--ab-navy) 0%, var(--ab-navy-light) 100%);
+  color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0 2rem 0;
+}
+.ab-hero h1 {
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  border-bottom: none;
+}
+.ab-hero p {
+  color: #f5f8fc;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Status pill — used on stub pages */
+.ab-pill {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: var(--ab-navy);
+  color: #ffffff;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+.ab-pill.stub {
+  background-color: #6b7280;
+}

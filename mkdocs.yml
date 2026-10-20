@@ -1,0 +1,102 @@
+site_name: AquaButler Wiki
+site_description: Production-grade pool automation on Raspberry Pi CM4. IP65/IP67 enclosure, RS-485 to Pentair, MQTT to AquaButler cloud.
+site_url: https://aquabutlers.com/wiki/
+repo_url: https://github.com/ultron-aquabutler/AquaButler-Wiki
+repo_name: ultron-aquabutler/AquaButler-Wiki
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: system-ui
+    code: system-ui
+  icon:
+    repo: fontawesome/brands/github
+  favicon: brand/aquabutler-submark-placeholder-2026-10-18.jpg
+  logo: brand/aquabutler-submark-placeholder-2026-10-18.jpg
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Hardware Overview: Hardware-Overview.md
+    - Getting Started: Getting-Started.md
+  - Software & Protocols:
+    - MQTT Bindings: MQTT-Bindings.md
+    - njsPC Bridge Integration: njsPC-Bridge-Integration.md
+  - Cloud & Fleet:
+    - OpenBalena Fleet: OpenBalena-Fleet.md
+    - Customer Portal: Customer-Portal.md
+  - Hardware Reference:
+    - Rotary Display: Rotary-Display.md
+  - Operations:
+    - Troubleshooting: Troubleshooting.md
+    - API Reference: API-Reference.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ultron-aquabutler
+      name: AquaButler on GitHub
+  generator: false
+  copyright: "AquaButler™ — Backyard Butlers LLC. Built with MkDocs Material."
