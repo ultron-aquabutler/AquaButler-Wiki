@@ -91,6 +91,7 @@ nav:
   - Hardware Reference:
     - Rotary Display: Rotary-Display.md
   - Operations:
+    - Cloud Loss Behavior: Cloud-Loss-Behavior.md
     - Troubleshooting: Troubleshooting.md
     - API Reference: API-Reference.md
 

@@ -11,6 +11,9 @@
   (gap report Gap 1)
 - **Cloud won't connect** — WiFi / Ethernet + OpenBalena heartbeat
 - **Rotary display blank** — SPI / power / config file
+- **"CLOUD UNREACHABLE" banner on the display** — the unit has lost its
+  internet connection, but your pool keeps running its schedule and the panel
+  still works. See [Cloud Loss Behavior](Cloud-Loss-Behavior.md).
 - **Packet capture for issue resolution** — three-method procedure per
   upstream
   [How-to-capture-all-packets-for-issue-resolution](https://github.com/tagyoureit/nodejs-poolController/wiki/How-to-capture-all-packets-for-issue-resolution)

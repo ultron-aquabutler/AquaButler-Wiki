@@ -50,6 +50,7 @@ web portal. We run on your equipment pad, not in your data center.
 
 | | |
 |---|---|
+| **[Cloud Loss Behavior](Cloud-Loss-Behavior.md)** | What your pool does when the internet drops — schedules keep running, the panel keeps working |
 | **[Troubleshooting](Troubleshooting.md)** | Field recipes for "no comms," "cloud won't connect," "rotary display blank" |
 | **[API Reference](API-Reference.md)** | HTTP + MQTT surface for integrators and partners |
 
