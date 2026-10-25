@@ -81,6 +81,7 @@ nav:
   - Getting Started:
     - Hardware Overview: Hardware-Overview.md
     - Getting Started: Getting-Started.md
+    - Losing Internet Connection: Losing-Internet-Connection.md
   - Software & Protocols:
     - MQTT Bindings: MQTT-Bindings.md
     - Home Assistant Configuration: HA-Configuration.md

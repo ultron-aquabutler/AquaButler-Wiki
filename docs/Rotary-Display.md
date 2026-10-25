@@ -15,6 +15,25 @@
 - **Status** (default, LIVE page + SYSTEM page)
 - **Service** (PIN-gated)
 - **Manual** (SELECT / EDIT / CONFIRM sub-states)
+- **Cloud alert** (a detail screen, reached by holding the knob while a
+  cloud-loss notice is showing — see
+  [Losing Internet Connection](Losing-Internet-Connection.md))
+
+## Cloud-loss notice
+
+When the unit cannot reach the internet, a persistent banner appears along
+the bottom of the status screen:
+
+| Banner | Color | Meaning |
+|--------|-------|---------|
+| `CLOUD UNREACHABLE` | RED | The cloud link is down. Schedules keep running and the panel still works. |
+| `SERVICE MODE` | ORANGE | A technician has put the unit into service mode. Not a fault. |
+| `COMMISSIONING` | YELLOW | The unit is being installed. Not a fault. |
+
+The banner never blocks the manual override menu — local control stays
+fully available. See
+[Losing Internet Connection](Losing-Internet-Connection.md) for what
+customers see and what to do.
 
 ## Color coding
 
